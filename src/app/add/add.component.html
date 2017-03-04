@@ -1,9 +1,10 @@
-<div class="row">
-  <h3>Add Restaurant</h3>
-  <div class="input-group">
-    <input class="form-control" [(ngModel)]="name">
-    <div class="input-group-btn">
-      <button type="button" class="btn btn-default" (click)="submit()">Add</button>
-    </div>
+<div class="alert alert-success" role="alert" [hidden]="!isSuccessfulSave">
+  <strong>Yay!</strong> New restaurant added!
+</div>
+<h3>Add Restaurant</h3>
+<div class="input-group">
+  <input class="form-control" [(ngModel)]="name">
+  <div class="input-group-btn">
+    <button type="button" class="btn btn-default" (click)="submit()">Add</button>
   </div>
 </div>
